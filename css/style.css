@@ -1,0 +1,303 @@
+body{
+    /* background-image: url(../assets/BG_Ordi.jpg); */
+    /* background-size: cover; */
+    /* background-position: center top; */
+    /* background-repeat: no-repeat; */
+    /* background-color: #FFF; */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
+    background: #b1f8f2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b1f8f2 0%, #53cbf1 40%, #05abe0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #b1f8f2 0%,#53cbf1 40%,#05abe0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b1f8f2 0%,#53cbf1 40%,#05abe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+/*-----------------
+Partie header
+------------------*/
+header{
+    width: 100%;
+    background-color: #b1f8f2;
+    color: black;
+    font-size: 1.4rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+@media (max-width: 600px){
+    header{
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+}
+
+.nav-bar--list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-bar--item{
+    list-style-type: none;
+    margin-left: 1rem;
+    color: black;
+    outline: none;
+}
+
+:any-link {
+    color: black;
+}
+
+
+/*-----------------
+Accueil Partie main
+------------------*/
+
+main{
+    padding-top: 2rem;
+    text-align: center;
+    height: 100vh;
+        background: #b1f8f2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b1f8f2 0%, #53cbf1 40%, #05abe0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #b1f8f2 0%,#53cbf1 40%,#05abe0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b1f8f2 0%,#53cbf1 40%,#05abe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.container--main{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.container--text--resume{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px){
+    .container--text--resume{
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+}
+#picture{
+    max-width: 300px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+#name{
+    color: royalblue;
+}
+.text--cloud {
+    width: 600px;
+    background-color: white; 
+    color: black;
+    border-radius: 20px;
+    margin-left: 1rem;
+    padding: 1rem;
+}
+.extern--links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.extern--links img{
+    width: 40px;
+    margin-right: 1rem;
+}
+.container--last-project{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container--last-project > article {
+    margin-right: 1rem;
+    border-radius: 10px;
+    max-width: 300px;
+    /* max-height: 250px; */
+    /* Ajouter animation */
+}
+.container--last-project--item img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 200px;
+    }
+/*-----------------
+CV Partie main
+------------------*/
+.formation{
+    /* background-image: url(../assets/BG_Ordi.jpg); */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.container--CV > div{
+    background-color: white; 
+    color: black;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.container--CV h2{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: #1098F7;
+}
+@media (max-width: 600px){
+    .container--CV h2{
+        margin-bottom: 1rem;
+    }
+}
+.container--CV ul{
+    width: 50%;
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+@media (max-width: 600px){
+    .container--CV ul{
+        width: 100%;
+    }
+}
+.container--CV li{
+    text-align: center;
+    list-style-type: none;
+}
+.formation, .experience, .hard--skill, .soft--skill, .langage{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.experience li{
+    margin-bottom: 1rem;
+}
+@media (max-width: 600px){
+    .formation, .experience, .hard--skill, .soft--skill, .langage{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+.experience > h2, .soft--skill > h2 {
+    order: 1;
+}
+@media (max-width: 600px){
+    .experience > h2, .soft--skill > h2{
+        order: 0;
+    }
+}
+
+.hard--skill img {
+    max-height: 50px;
+}
+ul.web--integration{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.web--integration > h3 {
+    width: 100%;
+}
+.web--integration li {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    align-items: center;
+}
+.web--integration li p{
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: 0.2rem;
+}
+.web--integration.gestion li{
+    width: 100%;
+}
+.web--integration.adobe{
+    display: flex;
+    justify-content: flex-start;
+}
+.web--integration.adobe li{
+    width: 45%;
+}
+/* @media (max-width: 600px){
+    .web--integration.adobe li{
+        width: 100%;
+    }
+} */
+.langage img{
+    width: 45px;
+    margin-right: 1rem;
+}
+#coucou{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+/*-----------------
+Projet Partie main
+------------------*/
+
+.container--project{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container--project > article{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    max-width: 30%;
+    max-height: 350px;
+}
+@media (max-width: 600px){
+    .container--project > article{
+        max-width: 100%;
+        margin-right: 0rem;
+    }
+}
+.container--project img{
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+height: 200px;
+}
+      
+.container--project img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.container--project article > a{
+    color: black;
+}
+/*-----------------
+Contact Partie main
+------------------*/
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    margin-bottom: 1rem;
+    background-color: white;
+    color: #B1F8F2;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+button {
+    background-color:white;
+    color: black;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
