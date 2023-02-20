@@ -234,10 +234,20 @@ ul.web--integration{
     width: 45px;
     margin-right: 1rem;
 }
-#coucou{
-    width: 200px;
-    height: 200px;
-    background-color: yellow;
+.container--interest{
+    display: flex;
+    justify-content: space-around;
+}
+.interest--item {
+    max-width: 200px;
+}
+.interest--item h3 {
+    position: relative;
+    top: -40%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: #000000 0 0 5px;
 }
 /*-----------------
 Projet Partie main
