@@ -1,15 +1,8 @@
 body{
-    /* background-image: url(../assets/BG_Ordi.jpg); */
-    /* background-size: cover; */
-    /* background-position: center top; */
-    /* background-repeat: no-repeat; */
-    /* background-color: #FFF; */
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
     background: #b1f8f2; /* Old browsers */
     background: -moz-linear-gradient(top,  #b1f8f2 0%, #53cbf1 40%, #05abe0 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  #b1f8f2 0%,#53cbf1 40%,#05abe0 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #b1f8f2 0%,#53cbf1 40%,#05abe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
 }
 
 /*-----------------
@@ -80,16 +73,15 @@ main{
     align-items: center;
 }
 
-@media (max-width: 600px){
-    .container--text--resume{
-        justify-content: start;
-        flex-wrap: wrap;
-    }
-}
 #picture{
     max-width: 300px;
     /* margin-bottom: 1rem; */
     border-radius: 10px;
+}
+@media (max-width: 600px){
+    #picture{
+        margin-bottom: 1rem;
+    }
 }
 #name{
     color: royalblue;
@@ -116,8 +108,8 @@ main{
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 .container--last-project > article {
     margin-right: 1rem;
