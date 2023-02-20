@@ -1,0 +1,32 @@
+body {
+    background-image: url("../images/Fond_Ecran.png");
+    background-size: 180%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    margin: 1rem;
+    color: aliceblue;
+}
+
+.title_white {
+    background-color: #ffffff99;
+    border-radius: 16px;
+}
+
+.characterInformation{
+    background-color: #ffffffB9;
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.favorite--gift {
+    display: flex;
+    flex-wrap: wrap;
+}
+li {
+    list-style-type: none;
+    margin-left: 1rem;
+    text-align: center;
+}
