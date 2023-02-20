@@ -238,6 +238,11 @@ ul.web--integration{
     display: flex;
     justify-content: space-around;
 }
+@media (max-width: 600px){
+    .container--interest{
+        flex-wrap: wrap;
+    }
+}
 .interest--item {
     max-width: 200px;
 }
