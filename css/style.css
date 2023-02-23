@@ -1,8 +1,10 @@
 body{
     background: #b1f8f2; /* Old browsers */
-    background: -moz-linear-gradient(top,  #b1f8f2 0%, #53cbf1 40%, #05abe0 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #b1f8f2 0%,#53cbf1 40%,#05abe0 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #b1f8f2 0%,#53cbf1 40%,#05abe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top,  #b1f8f2 0%, #53cbf1 50%, #05abe0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #b1f8f2 0%,#53cbf1 50%,#05abe0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b1f8f2 0%,#53cbf1 50%,#05abe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*-----------------
@@ -32,13 +34,24 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+}
+@media (max-width: 600px){
+    .nav-bar--list{
+        max-width: 450px;
+        margin-left: auto;
+        text-align: center;
+    }
 }
 
 .nav-bar--item{
     list-style-type: none;
     margin-left: 1rem;
+    padding: 0.5rem;
     color: black;
     outline: none;
+    background-color: ivory;
+    border-radius: 10px;
 }
 
 :any-link {
@@ -133,9 +146,21 @@ CV Partie main
     background-position: center top;
     background-repeat: no-repeat;
 }
+#buttonDownloadCV{
+    background-color: rgb(233, 203, 37);
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-left: 80%;
+}
+@media (max-width: 600px){
+    #buttonDownloadCV{
+        margin-left: 60%;
+    }
+}
 .container--CV > div{
     background-color: white; 
     color: black;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 20px;

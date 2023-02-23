@@ -30,3 +30,16 @@ li {
     margin-left: 1rem;
     text-align: center;
 }
+main{
+    margin-bottom: 2rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    background-color: royalblue;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
