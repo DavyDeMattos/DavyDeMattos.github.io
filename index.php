@@ -3,11 +3,11 @@
     Developpeur Web / Web mobile
 </h1>
 <div class="extern--links">
-    <a href="https://github.com/DavyDeMattos"><img src="../assets/github.png" alt="Logo de GitHub"></a>
-    <a href="https://www.linkedin.com/in/davy-de-mattos-a40ba791"><img src="../assets/LinkedIn-Logo.png" alt="Logo de LinkedIn"></a>
+    <a href="https://github.com/DavyDeMattos"><img src="./assets/github.png" alt="Logo de GitHub"></a>
+    <a href="https://www.linkedin.com/in/davy-de-mattos-a40ba791"><img src="./assets/LinkedIn-Logo.png" alt="Logo de LinkedIn"></a>
 </div>
 <div class="container--text--resume">
-    <img id="picture" src="../assets/Photo_ID.jpg">
+    <img id="picture" src="./assets/Photo_ID.jpg">
     <div class="text--cloud">
         <p>
             J'ai débuté mes études par un BTS Audiovisuel que j'ai suivi plusieurs années en tant que technicien audiovisuel dans la région parisienne. Pour des raisons personnelles, j'ai dû quitter la région et envisager une reconversion.
@@ -25,11 +25,11 @@
     <h2>Derniers projets : </h2>
     <div class="container--last-project">
         <article class="container--last-project--item"><a href="#">
-            <img src="../assets/Apercu_Ma_Visiotec.jpg" alt="Aperçu projet">
+            <img src="./assets/Apercu_Ma_Visiotec.jpg" alt="Aperçu projet">
             <h3>Ma Visiotec</h3>
         </a></article>
-        <article class="container--last-project--item"><a href="../projects/Stardew_Valley/html/index.html" >
-            <img src="../assets/Apercu_Choose_your_romance.jpg" alt="Aperçu projet">
+        <article class="container--last-project--item"><a href="./projects/Stardew_Valley/html/index.html" >
+            <img src="./assets/Apercu_Choose_your_romance.jpg" alt="Aperçu projet">
             <h3>Choose your romance</h3>
         </a></article>
     </div>
