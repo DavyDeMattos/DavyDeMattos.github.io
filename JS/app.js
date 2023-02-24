@@ -30,19 +30,19 @@ const app = {
     },
 
     showInformation : function (name){
-        // Nous recevons en paramètre le nom de la personne cliqué.
-        console.log('Le charactère cliqué est : ' + name);
+        console.log('Le projet cliqué est : ' + name);
 
-        // Sélection de la div de character
-        const container = document.querySelector('.characterInformation');
-
-        container.innerHTML = "";
+        // Start empty div
+        const window = document.querySelector('#windowInformation');
+        window.innerHTML = ''
         // Création des élements de la div
-        const characterName = document.createElement('h2');
-        const anniversaire = document.createElement('p');
-        const favoriteTitle = document.createElement('h3');
+        const projectTitle = document.createElement('h4');
+        const resume = document.createElement('p');
+        const status = document.createElement('span');
+        const link = document.createElement('a');
+        link.textContent = "Lien vers le projet"
         const ulElement = document.createElement('ul');
-        ulElement.classList.add('favorite--gift');
+        ulElement.classList.add('project--tools');
 
         let projects = [
             // Projet fini
@@ -99,36 +99,39 @@ const app = {
             }
         ]
 
-        for (const character of tableau) {
+        for (const project of projects) {
             // Si le nom du tableau corresponds au nom cliqué
-            if (name == character.name) {
+            if (name == project.slug) {
                 // Ajout du titre
-                container.appendChild(characterName);
-                characterName.textContent = character.name
+                window.appendChild(projectTitle);
+                projectTitle.textContent = project.title
 
-                // Ajout de l'anniversaire
-                container.appendChild(anniversaire);
-                anniversaire.textContent = `L'anniversaire de ${character.name} est le ${character.anniversaire}`
-                
-                container.appendChild(favoriteTitle);
-                favoriteTitle.textContent = 'Voici la liste de ses cadeaux favoris'  ;       
+                // Ajout du résumé
+                window.appendChild(resume);
+                resume.textContent = project.resume;
 
-                // Ajout de la liste des cadeau favoris
-                container.appendChild(ulElement);   
+                // Ajout du statut
+                window.appendChild(status);
+                status.textContent = project.status;       
 
+                // assignation de l'adresse
+                window.appendChild(link);
+                link.href=`./projects/${project.link}` 
 
-                for (const item of character.likes) {
+                // Ajout de la liste des outils utilisés
+                window.appendChild(ulElement);   
+
+                for (const item of project.tools) {
                     let liElement = document.createElement('li');
                     ulElement.appendChild(liElement);
-                    liElement.innerHTML = `<img src='../images/${item}.png' /> <h4>${item}</h4>`
+                    liElement.innerHTML = item;
                 }
 
-                console.log(character.anniversaire);
-                console.log(character.likes);
             }
             // console.log(character.name);
         }
         // console.log(tableau[1].likes);
+        window.toggleClass('show');
 
     },
 
