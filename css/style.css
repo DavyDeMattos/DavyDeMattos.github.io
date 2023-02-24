@@ -106,6 +106,7 @@ main{
     border-radius: 20px;
     margin-left: 1rem;
     padding: 1rem;
+    
 }
 .extern--links{
     display: flex;
@@ -147,10 +148,11 @@ CV Partie main
     background-repeat: no-repeat;
 }
 #buttonDownloadCV{
-    background-color: rgb(233, 203, 37);
+    background-color: #ff9800;
     border-radius: 10px;
     padding: 0.5rem;
     margin-left: 80%;
+    color: black;
 }
 @media (max-width: 600px){
     #buttonDownloadCV{

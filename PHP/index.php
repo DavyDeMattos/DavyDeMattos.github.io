@@ -1,4 +1,4 @@
-<?php include("./template/header.tpl.php"); ?>
+<?php include("./PHP/template/header.tpl.php"); ?>
 <h1><span id="name">De Mattos Davy</span> </br>
     Developpeur Web / Web mobile
 </h1>
@@ -34,4 +34,4 @@
         </a></article>
     </div>
 </div>
-<?php include("./template/footer.tpl.php"); ?>
+<?php include("./PHP/template/footer.tpl.php"); ?>
