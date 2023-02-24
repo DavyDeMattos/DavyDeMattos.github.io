@@ -293,12 +293,20 @@ Projet Partie main
 .container--project > article{
     margin-right: 1rem;
     margin-bottom: 1rem;
+    width: 30%;
+    height: 240px;
+    background-color: rgba(255, 255, 255, 0.39);
+    border-radius: 10px;
+    /* top right bottom left */
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+.container--project > article > img{
     max-width: 30%;
-    max-height: 350px;
+    max-height: 200px;
 }
 @media (max-width: 600px){
     .container--project > article{
-        max-width: 100%;
+        width: 100%;
         margin-right: 0rem;
     }
 }
@@ -315,6 +323,20 @@ box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 
 .container--project article > a{
     color: black;
+}
+
+.container--project .inProgress{
+    position: relative;
+    bottom: 55%;
+    background-color: #fff;
+    border-radius: 25px;
+    margin-bottom: 0;
+}
+@media (max-width: 600px){
+    .container--project .inProgress{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 /*-----------------
 Contact Partie main
