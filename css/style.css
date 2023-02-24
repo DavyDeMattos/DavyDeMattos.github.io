@@ -301,7 +301,6 @@ Projet Partie main
     padding: 1rem 0.5rem 1rem 0.5rem;
 }
 .container--project > article > img{
-    max-width: 30%;
     max-height: 200px;
 }
 @media (max-width: 600px){
@@ -317,12 +316,9 @@ padding: 5px;
 height: 200px;
 }
       
-.container--project img:hover {
+.container--project article:hover {
 box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-.container--project article > a{
-    color: black;
+cursor: pointer;
 }
 
 .container--project .inProgress{
