@@ -15,32 +15,49 @@ const app = {
         
     },
 
-    
+    handleClickCross : function(event){
+        console.log('click');
+        const window = document.querySelector('#windowInformation');
+        window.remove();
+    },
+
     handleClick : function(event){
         console.log('click');
         // article.innerHTML = '';
         const clickedArticle = event.currentTarget.getAttribute('value');
         // console.log(clickedArticle);
-        // On sélectionne le container
         const window = document.querySelector('#windowInformation');
-        window.innerHTML = ''
-        // On place la div dans le container.
-        // containerCharacter.appendChild(divElement);
+        console.log(window);
+        if(window != null){
+            window.remove();
+        }
         app.showInformation(clickedArticle);
     },
 
     showInformation : function (name){
         console.log('Le projet cliqué est : ' + name);
+        // Création de la civ
+        const window = document.createElement('div');
+        // Application de l'id sur la div
+        window.id = 'windowInformation';
+        // console.log(window);
+        const container = document.querySelector('.container--project');
+        container.prepend(window);
 
         // Start empty div
-        const window = document.querySelector('#windowInformation');
-        window.innerHTML = ''
+        // const window = document.querySelector('#windowInformation');
+        // window.innerHTML = ''
         // Création des élements de la div
+        const closeCross = document.createElement('button');
+        closeCross.textContent = "X";
+        closeCross.classList.add('close--cross');
+        window.prepend(closeCross);
+
         const projectTitle = document.createElement('h4');
         const resume = document.createElement('p');
         const status = document.createElement('span');
         const link = document.createElement('a');
-        link.textContent = "Lien vers le projet"
+        link.textContent = "Lien vers le projet";
         const ulElement = document.createElement('ul');
         ulElement.classList.add('project--tools');
 
@@ -49,7 +66,7 @@ const app = {
             {
                 slug : "choose_your_romance",
                 title : "Choose your romance",
-                resume : "Dans le jeu Stardey Valley, il est possible d'augmenter son affinité avec des personnages en leur parlans ou leur offrant des cadeaux qu'ils apprécient. Après avoir en avoir eu assez d'ouvrir moult onglets des page wiki pour avoir accès à ces informations j'ai développé cet outil sans prétention. L'utilisateur peut choisir le personnage souhaité en défilant via les flèches et cliquer sur le personnage voulu.",
+                resume : "Dans le jeu Stardey Valley, il est possible d'augmenter son affinité avec des personnages en leur parlant ou leur offrant des cadeaux qu'ils apprécient. Après avoir en avoir eu assez d'ouvrir moult onglets des pages wiki pour avoir accès à ces informations, j'ai développé cet outil sans prétention. L'utilisateur peut choisir le personnage souhaité en défilant via les flèches et cliquer sur le personnage voulu.",
                 status : "Fini",
                 link: "Stardew_Valley/html/index.html",
                 tools : [
@@ -130,8 +147,9 @@ const app = {
             }
             // console.log(character.name);
         }
+        closeCross.addEventListener('click', app.handleClickCross);
+
         // console.log(tableau[1].likes);
-        window.toggleClass('show');
 
     },
 
