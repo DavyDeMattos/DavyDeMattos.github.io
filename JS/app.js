@@ -68,7 +68,7 @@ const app = {
                 title : "Choose your romance",
                 resume : "Dans le jeu Stardey Valley, il est possible d'augmenter son affinité avec des personnages en leur parlant ou leur offrant des cadeaux qu'ils apprécient. Après avoir en avoir eu assez d'ouvrir moult onglets des pages wiki pour avoir accès à ces informations, j'ai développé cet outil sans prétention. L'utilisateur peut choisir le personnage souhaité en défilant via les flèches et cliquer sur le personnage voulu.",
                 status : "Fini",
-                link: "Stardew_Valley/html/index.html",
+                links: "./projects/Stardew_Valley/html/index.html",
                 tools : [
                     "HTML",
                     "CSS",
@@ -80,8 +80,8 @@ const app = {
                 slug : "visiotec",
                 title : "Visiotec",
                 resume : "Dans le cadre de ma formation, nous avons développé ce site avec une équipe de 5 personnes. Il a pour but de faire office de marque-page virtuelle. Chaque utilisateur connecté peut répertorier des séries et films et indiquer à quel saison et épisode il s'est arrêté.",
-                status : "En cours de publication",
-                links : "",
+                status : "En cours de publication - Nom de domaine temporaire",
+                links : "http://ilost-service.fr/",
                 tools : [
                     "SASS",
                     "React",
@@ -133,7 +133,8 @@ const app = {
 
                 // assignation de l'adresse
                 window.appendChild(link);
-                link.href=`./projects/${project.link}` 
+                link.href=project.links; 
+                console.log(project.links);
 
                 // Ajout de la liste des outils utilisés
                 window.appendChild(ulElement);   
