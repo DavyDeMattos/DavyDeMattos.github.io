@@ -31,7 +31,9 @@ const app = {
         if(window != null){
             window.remove();
         }
-        app.showInformation(clickedArticle);
+        if(clickedArticle != null){
+            app.showInformation(clickedArticle);
+        }
     },
 
     showInformation : function (name){
@@ -95,13 +97,25 @@ const app = {
                     "Thunder client (Pour tester les requêtes)"
                 ]
             },
+            {
+                slug : "memory_game",
+                title : "Jeu de mémoire",
+                resume : "Petit jeu de mémoire avec des cartes fait en Javascript. ",
+                status : "Seconde version en cours.",
+                links : "./projects/Memory/index.html",
+                tools : [
+                    "HTML",
+                    "CSS",
+                    "JS"
+                ]
+            },
             // Projet en cours de développement
             {
                 slug : "hotel",
                 title : "Hotel",
                 resume : "Site servant à m'entrainer ayant pour thème l'hotellerie",
                 status : "En cours de développement",
-                links : "",
+                links : null,
                 tools : [
                 ]
             },
@@ -129,12 +143,11 @@ const app = {
 
                 // Ajout du statut
                 window.appendChild(status);
-                status.textContent = project.status;       
+                status.textContent = project.status;
 
                 // assignation de l'adresse
                 window.appendChild(link);
                 link.href=project.links; 
-                console.log(project.links);
 
                 // Ajout de la liste des outils utilisés
                 window.appendChild(ulElement);   
