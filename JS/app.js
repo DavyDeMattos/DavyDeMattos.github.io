@@ -102,7 +102,7 @@ const app = {
                 title : "Jeu de mémoire",
                 resume : "Petit jeu de mémoire avec des cartes fait en Javascript. ",
                 status : "Seconde version en cours.",
-                links : "./projects/Memory/index.html",
+                links : "./projects/Memory_Game/HTML/index.html",
                 tools : [
                     "HTML",
                     "CSS",
