@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Jeu de Mémoire avec des chiens">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu de mémoire</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <h1>Jeu de mémoire</h1>
+  <div class="difficulty">
+    <div class="difficulty-element" value="8">
+      <h2>Facile</h2>
+    </div>
+    <div class="difficulty-element" value="12">
+      <h2>Normal</h2>
+    </div>
+    <div class="difficulty-element" value="18">
+      <h2>Difficile</h2>
+    </div>
+  </div>
+  <div class="timer none">
+    <p>Ici chrono</p>
+  </div>
+  <section class="memory-game none">
+    <template id="card-template">
+      <div>
+        <div class="memory-card" data-framework="">
+          <img src="" alt="image of memory game" class="front-face">
+          <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="">
+          <img src="" alt="image of memory game" class="front-face">
+          <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+        </div>
+      </div>
+    </template>
+    <div class="memory-card" data-framework="dog_1">
+      <img src="../img/dog_1.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_1">
+      <img src="../img/dog_1.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_2">
+      <img src="../img/dog_2.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_2">
+      <img src="../img/dog_2.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_3">
+      <img src="../img/dog_3.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_3">
+      <img src="../img/dog_3.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_4">
+      <img src="../img/dog_4.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_4">
+      <img src="../img/dog_4.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_5">
+      <img src="../img/dog_5.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_5">
+      <img src="../img/dog_5.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_6">
+      <img src="../img/dog_6.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_6">
+      <img src="../img/dog_6.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <!-- <div class="memory-card" data-framework="dog_7">
+      <img src="../img/dog_7.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_7">
+      <img src="../img/dog_7.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_8">
+      <img src="../img/dog_8.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_8">
+      <img src="../img/dog_8.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_9">
+      <img src="../img/dog_9.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="dog_9">
+      <img src="../img/dog_9.jpg" alt="image of memory game" class="front-face">
+      <img src="../img/dog_cover.jpg" alt="back image of memory game" class="back-face">
+    </div> -->
+  </section>
+  <script src="../JS/app.js"></script>
+  <script src="../JS/difficulty.js"></script>
+  <script src="../JS/card.js"></script>
+  <script src="../JS/cardlist.js"></script>
+</body>
+</html>
