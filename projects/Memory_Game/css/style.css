@@ -17,7 +17,6 @@ h1{
   background-color: cornflowerblue;
   padding: 20px;
   border-radius: 5px;
-  cursor: zoom-in;
 }
 
 #choice{
@@ -25,7 +24,7 @@ h1{
   margin: 10px;
   padding: 20px;
   border-radius: 5px;
-  cursor: grab;
+  cursor: pointer;
   font-size: larger;
 }
 
@@ -38,7 +37,7 @@ h1{
   margin: 10px;
   padding: 20px;
   border-radius: 5px;
-  cursor: grab;
+  cursor: pointer;
   width: 9rem;
   text-align: center;
 }
@@ -48,7 +47,7 @@ h1{
   margin: 10px;
   padding: 20px;
   border-radius: 5px;
-  cursor: grab;
+  cursor: pointer;
   font-size: larger;
 }
 
