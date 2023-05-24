@@ -23,5 +23,8 @@ const difficulty = {
   toggleNone: function() {
     const section = document.querySelector('.memory-game');
     section.classList.toggle('none');
+
+    const difficultySelection = document.querySelector('.difficulty');
+    difficultySelection.classList.toggle('none');
   } 
 }

@@ -1,11 +1,13 @@
+let hasFlippedCard = false;
+let lockBoard = false;
+let firstCard, secondCard;
+
 const scripts = {
 
+  
   init: function(){
     const cards = document.querySelectorAll('.memory-card');
     
-    let hasFlippedCard = false;
-    let lockBoard = false;
-    let firstCard, secondCard;
     scripts.shuffle(cards);
     
     cards.forEach( card => card.addEventListener('click', scripts.flipCard));
@@ -46,8 +48,8 @@ const scripts = {
   
   disablecards: function(){
     // it's a match
-    firstCard.removeEventListener('click', flipCard);
-    secondCard.removeEventListener('click', flipCard);
+    firstCard.removeEventListener('click', scripts.flipCard);
+    secondCard.removeEventListener('click', scripts.flipCard);
   
     scripts.resetBoard();
   },
@@ -59,7 +61,7 @@ const scripts = {
       firstCard.classList.remove('flip');
       secondCard.classList.remove('flip');
   
-      resetBoard();
+      scripts.resetBoard();
     }, 1500);
   },
   
