@@ -1,6 +1,6 @@
 const card = {
 
-  create: function(number) {
+  create: function(number, difficulty) {
     // console.log("card initialisé");
 
     // On crée la div parent de la tache
@@ -9,7 +9,7 @@ const card = {
     // -------------------First div---------------------
 
     const firstDivElement = document.createElement('div');
-    firstDivElement.classList.add("memory-card");
+    firstDivElement.classList.add("memory-card", difficulty);
     firstDivElement.setAttribute('data-framework', `dog_${number}`);
 
     const firstImgElement = document.createElement('img');
@@ -27,7 +27,7 @@ const card = {
     // -------------------Second div---------------------
 
     const secondDivElement = document.createElement('div');
-    secondDivElement.classList.add("memory-card");
+    secondDivElement.classList.add("memory-card", difficulty);
     secondDivElement.setAttribute('data-framework', `dog_${number}`);
 
     const thirdImgElement = document.createElement('img');
