@@ -18,6 +18,15 @@ const app = {
       scripts.init();
       resetDiv.style.cssText -= 'pointer-events:none';
     }, 1500);
+  },
+
+  backChoice: function(){
+    // console.log('backChoice called');
+    const memoryGame = document.querySelector('.memory-game');
+    memoryGame.classList.remove('easy', 'normal', 'hard');
+    memoryGame.textContent = null;
+    difficulty.toggleNone();
+
   }
 }
 document.addEventListener('DOMContentLoaded', app.init);

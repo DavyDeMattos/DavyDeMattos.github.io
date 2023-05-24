@@ -6,6 +6,8 @@ const difficulty = {
     difficultyButtons.forEach(button => {
       button.addEventListener('click', difficulty.setDisboard)
     });
+    const choice = document.querySelector('#choice');
+    choice.addEventListener('click', app.backChoice);
   },
 
   setDisboard: function(button) {
@@ -35,16 +37,20 @@ const difficulty = {
   },
 
   toggleNone: function() {
-    // show cards board
-    const section = document.querySelector('.memory-game');
-    section.classList.toggle('none');
-
     // hide difficulties buttons
     const difficultySelection = document.querySelector('.difficulty');
     difficultySelection.classList.toggle('none');
 
+    // show cards board
+    const section = document.querySelector('.memory-game');
+    section.classList.toggle('none');
+
     // show reset button
     const reset = document.querySelector('.reset');
     reset.classList.toggle('none');
+
+    // show choice button
+    const choice = document.querySelector('#choice');
+    choice.classList.toggle('none');
   }
 }
