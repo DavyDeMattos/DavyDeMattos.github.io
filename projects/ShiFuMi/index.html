@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shi Fu Mi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="../ShiFuMi/index.html">
+      <div>Home</div>
+    </a>
+    <div id="rules">Règle</div>
+  </header>
+  <main>
+    <div class="container">
+    <h1>Shi Fu Mi</h1>
+    <div class="difficulty">
+      <div class="difficulty-element" value="normal">
+        <h2>Version Standard</h2>
+      </div>
+      <div class="difficulty-element" value="spock">
+        <h2>Version Lézard Spock</h2>
+      </div>
+    </div>
+    <section class="game none">
+      <h3 id="titleGame"></h3>
+       <div class="scoring">Vous avez <span id="score"></span> victoire(s) d'affilée(s)</div> 
+      <div class="part-player">
+      </div>
+      <div class="part-bot">
+        <!-- <img src="./assets/robot.jpg" value="robot" /> -->
+      </div>
+    </section>
+    <div class="reset none">
+      <p class="reset-button">Réinitialisation</p>
+    </div>
+    <p id="choice" class="none">Retour à la sélection de la difficulté</p>
+    </div>
+  </main>
+  <footer>
+    <div class="score"></div>
+  </footer>
+  <script src="app.js"></script>
+  <script src="difficulties.js"></script>
+  <script src="results.js"></script>
+</body>
+</html>

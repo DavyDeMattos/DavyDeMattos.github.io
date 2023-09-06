@@ -1,0 +1,146 @@
+body{
+  background-color:bisque;
+}
+header{
+  display: flex;
+  justify-content: space-around;
+}
+
+/*--------------------- 
+Rules section
+--------------------- */
+
+.rules--explaination{
+  z-index: 2;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  left: 3rem;
+  background-color: rgba(240, 248, 255, 0.932);
+  position: absolute;
+}
+header>a, header>#rules{
+  padding: 1rem;
+}
+#rules, .restart--button, .difficulty-element{
+  cursor: pointer;
+}
+
+.container{
+  /* background-color: #fff; */
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 600px){
+  .container{
+    width: 80%;
+  }
+}
+/*--------------------- 
+Difficulty section
+--------------------- */
+
+.difficulty-element{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*--------------------- 
+Game section
+--------------------- */
+
+.game>h3, .game .result{
+  flex-shrink: 1;
+  flex-grow: 2;
+}
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.scoring{
+  order: 1;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.part-player, .part-bot{
+  width: 45%;
+  border-radius: 20px;
+  display: flex;
+
+}
+.part-player{
+  /* background-color: blue; */
+  order: 2;
+}
+
+.part-bot{
+  /* background-color: red; */
+  order: 3;
+}
+.part-player>ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-left:0;
+}
+.part-player li{
+  width: 45%;
+  height: 45%;
+  align-items: center;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+.part-player>ul>li>img{
+  box-sizing: border-box;
+  width: 100%;
+  /* height: -webkit-fill-available; */
+  height: 200px;;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.part-player>img, .part-bot>img{
+  box-sizing: border-box;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.none{
+  display: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+.result{
+  z-index: 1;
+  width: 78%;
+  height: 15vh;
+  border-radius: 10px;
+  margin-top: 20%;
+  /* margin-left: 3%; */
+  background-color: rgba(240, 248, 255, 0.932) ;
+  position: absolute;
+}
+
+.restart--button{
+  background-color: darkkhaki;
+  text-align: center;
+  border: 1px black;
+  width: 60%;
+  border-radius: 5px;
+  margin-left: 20%;
+}

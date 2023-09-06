@@ -82,8 +82,8 @@ const app = {
                 slug : "visiotec",
                 title : "Visiotec",
                 resume : "Dans le cadre de ma formation, nous avons développé ce site avec une équipe de 5 personnes. Il a pour but de faire office de marque-page virtuelle. Chaque utilisateur connecté peut répertorier des séries et films et indiquer à quel saison et épisode il s'est arrêté.",
-                status : "En cours de publication - Nom de domaine temporaire",
-                links : "http://ilost-service.fr/",
+                status : "En cours de publication",
+                links : null,
                 tools : [
                     "SASS",
                     "React",
@@ -101,8 +101,20 @@ const app = {
                 slug : "memory_game",
                 title : "Jeu de mémoire",
                 resume : "Petit jeu de mémoire avec des cartes fait en Javascript. ",
-                status : "Seconde version en cours.",
+                status : "1ère version faite",
                 links : "./projects/Memory_Game/HTML/index.html",
+                tools : [
+                    "HTML",
+                    "CSS",
+                    "JS"
+                ]
+            },
+            {
+                slug : "shi_fu_mi",
+                title : "Pierre Papier Ciseaux",
+                resume : "Jeu du Pierre Papier Ciseaux avec variantes fait en Javascript. ",
+                status : "1ère version faite",
+                links : "./projects/ShiFuMi/index.html",
                 tools : [
                     "HTML",
                     "CSS",
