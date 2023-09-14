@@ -83,7 +83,7 @@ const app = {
                 title : "Visiotec",
                 resume : "Dans le cadre de ma formation, nous avons développé ce site avec une équipe de 5 personnes. Il a pour but de faire office de marque-page virtuelle. Chaque utilisateur connecté peut répertorier des séries et films et indiquer à quel saison et épisode il s'est arrêté.",
                 status : "En cours de publication",
-                links : null,
+                links : "https://www.linkedin.com/posts/davy-de-mattos_formation-activity-7056959919765245952-8Fkt?utm_source=share&utm_medium=member_desktop",
                 tools : [
                     "SASS",
                     "React",
